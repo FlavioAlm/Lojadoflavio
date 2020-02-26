@@ -1,0 +1,40 @@
+<% if flash[:notice] %>
+    <div class="alert alert-success" role="alert">
+        <%= flash[:notice] %>
+    </div>
+<% end %>
+
+<table class="table table-borderer table-hover">
+    <thread>    
+        <tr>
+            <td>Nome</rd>
+            <td>Descrição</rd>
+            <td>Departamento</rd>
+            <td>Preço</rd>
+            <td>Quantidade</rd>
+            <td colspan = 2></td>
+        </tr>    
+    </thread>
+    <tbody>
+        <%= render @produtos %>
+    </tbody>
+</table>
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Produto com desconto</h4>
+</div>
+<table class="table table-borderer table-hover">
+    <thread>    
+        <tr>
+            <td>Nome</rd>
+            <td>Descrição</rd>
+            <td>Departamento</rd>
+            <td>Preço</rd>
+            <td>Quantidade</rd>
+            <td colspan = 2></td>
+        </tr>    
+    </thread>
+    <tbody>
+        <%= render @produto_com_desconto %>
+    </tbody>
+</table>
+
